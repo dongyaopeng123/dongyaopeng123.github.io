@@ -1,9 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>我的主页</title>
+    <meta charset="UTF-8">
+    <title>Yaopeng Dong - Personal Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .photo img {
+            width: 180px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .info h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+
+        .info p {
+            margin: 6px 0;
+            font-size: 15px;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .photo img {
+                width: 150px;
+                height: 190px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Hello World</h1>
+
+<div class="container">
+
+    <div class="header">
+        <div class="photo">
+            <img src="photo.jpg" alt="Yaopeng Dong">
+        </div>
+
+        <div class="info">
+            <h1>Yaopeng Dong</h1>
+            <p><strong>PhD Student</strong></p>
+            <p>College of Computer Science</p>
+            <p>Nankai University, Tianjin, China</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contact Information</h2>
+        <div class="contact">
+            <p><strong>Address:</strong> College of Computer Science, Nankai University, Tianjin, China</p>
+            <p><strong>Email:</strong> <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Biography</h2>
+        <p>
+            Yaopeng Dong received the Bachelor’s degree in Computer Science and Technology 
+            from the College of Artificial Intelligence, Hebei University of Technology, 
+            Tianjin, China, in 2025. He is currently working toward the PhD degree with the 
+            College of Computer Science, Nankai University, Tianjin, China. 
+            His current research interests include computer vision.
+        </p>
+    </div>
+
+</div>
+
 </body>
 </html>
